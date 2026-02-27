@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-primary: #1E3A8A;
+  --color-secondary: #2563EB;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-50 text-slate-900;
+  }
+}
+
+.question-palette-btn {
+  @apply w-10 h-10 rounded-md flex items-center justify-center text-sm font-medium transition-all;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-medium transition-colors disabled:opacity-50;
+}
+
+.btn-outline {
+  @apply border border-slate-200 hover:bg-slate-50 text-slate-700 px-6 py-2 rounded-lg font-medium transition-colors;
+}
+
